@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(18, 3, 71);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav img{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    overflow: hidden;
+    margin-left: -90%;
+
+}
+#nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+#nav a:hover{
+    text-transform: uppercase;
+    text-decoration: overline underline 1px;
+}

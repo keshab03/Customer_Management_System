@@ -1,0 +1,83 @@
+/* #mainform{
+    border: 2px solid black;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 107, 107);
+}
+#mainform>form{
+    height: 200px;
+    width: 270px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(206, 57, 57);
+}
+#mainform>form label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#mainform>form input{
+    border: none;
+    background-color:transparent ;
+    border-bottom: 1px solid black;
+}
+#mainform>form input:focus{
+    outline: none;
+} */
+#mainform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eb5656;
+}
+
+#edit {
+  background-color: #675b5b;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#edit caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#edit table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#edit th,
+#edit td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+#edit input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#edit button {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: auto;
+}
+
+#edit button:hover {
+  background-color: #0069d9;
+}

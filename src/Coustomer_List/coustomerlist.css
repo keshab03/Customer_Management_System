@@ -1,0 +1,79 @@
+#table table {
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#table th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+#table th {
+  background-color: #b0e2f8;
+  font-weight: bold;
+  text-align: center;
+}
+
+#table tr:hover {
+  background-color: #f5f5f5;
+}
+
+#table button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 1px;
+  border-radius: 5px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+#table button:hover {
+  background-color: #3e8e41;
+  border-radius: 25px;
+  text-decoration: underline;
+}
+
+#table #delete {
+  background-color: #c60101;
+}
+
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prev {
+  cursor: pointer;
+  margin: 5px;
+  background-color: #3e8e41;
+}
+
+#next {
+  cursor: pointer;
+  margin: 5px;
+  background-color: #3e8e41;
+}
+
+#filterdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#filterdata button {
+  cursor: pointer;
+  margin: 5px;
+  background-color: #3e8e41;
+
+}
