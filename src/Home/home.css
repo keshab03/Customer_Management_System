@@ -3,28 +3,40 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
 #nav{
-    height: 80px;
-    width: 100%;
-    background-color: rgb(18, 3, 71);
+    height: 98px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 20px rgb(235, 4, 4);
+    /* border-bottom: 3px solid yellow; */
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-#nav img{
-    height: 60px;
-    width: 60px;
-    position: absolute;
-    overflow: hidden;
-    margin-left: -90%;
+
+#logo img{
+    width: 100px;
+    height: 80px;
+}
+#menu a{
+text-decoration: none;
+font-size: 25px;
+color: white;
+text-shadow: 10px 10px 10px rgb(255, 255, 255);
 
 }
-#nav a{
-    color: white;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-}
-#nav a:hover{
+
+#menu a:hover{
+    text-decoration: 1px solid yellow overline;
     text-transform: uppercase;
-    text-decoration: overline underline 1px;
 }
+
+#menu i{
+    font-size: 22px;
+}
+
+#menu a,i{
+    margin-left: 55px;
+}
+
+
