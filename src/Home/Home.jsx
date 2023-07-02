@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import "./home.css"
-import logo from "./km-logo.png"
+import logo from "./km-Logo.png"
 import customerService from '../services/customerservice'
 const Home = () => {
   let [data, setData] = useState([]);
