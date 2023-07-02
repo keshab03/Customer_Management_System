@@ -12,7 +12,7 @@ const Coustomerlist = () => {
   const [search, setSearch] = useState('');
   const [showDue, setShowDue] = useState(false);
   const [showExtra, setShowExtra] = useState(false);
-  
+
   const itemsPerPage = 5;
 
 
@@ -50,7 +50,9 @@ const Coustomerlist = () => {
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
-
+  let cancle = () => {
+    setSearch('')
+  }
   let filteredData = data;
 
   if (showDue) {
@@ -96,15 +98,15 @@ const Coustomerlist = () => {
 
   let sl = currentPage * 5 - 4;
   return (
-    <div id='list'>
+    <div>
       {data && (
         <>
-             <input
+          <input id='search'
             type="text"
             placeholder="Search..."
             value={search}
             onChange={handleSearch}
-          />
+          /> <span id='span' onClick={cancle}>x</span>
           <section id='table' key={data.id}>
             <table>
               <thead>
@@ -148,7 +150,7 @@ const Coustomerlist = () => {
           </section>
         </>
       )}
-            <div id="page">
+      <div id="page">
         <button onClick={prevPage} id="prev">
           Previous
         </button>
