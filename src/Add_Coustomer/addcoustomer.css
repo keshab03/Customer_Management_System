@@ -1,46 +1,90 @@
-#addcust img{
+#addcust {
+  background-color: black;
+  color: white;
+}
+#marquee {
+  display: flex;
+}
+
+#marquee h2 {
+  height: min-content;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-style: oblique;
+  font-size: x-large;
+  color: yellow;
+
+}
+
+#addcust img {
   height: 21px;
+  filter: grayscale(100%) invert(100%);
+  margin-top: 2px;
 }
-#addcust{
-    background-color: #ef9e9e;
-    
-}
+
 #mainform {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #694747;
-    padding: 2rem;
-    border-radius: 15px;
-    border-style: dotted;
-  }
-  input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ddd;
-    font-size: 1rem;
-  }
-  
-  form button {
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    background-color:black;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #005ea6;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: rgb(0, 0, 0);
+}
+
+#mainform h3 {
+  font-size: 28px;
+  color: yellow;
+  font-style: oblique;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  text-decoration: underline;
+
+}
+
+#mainform form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(57, 57, 181);
+  border-radius: 75px;
+  border-style: dotted;
+  height: 65vh;
+  width: 450px;
+  padding-top: 10px;
+  box-shadow: -17px -12px 25px rgb(0, 255, 255);
+}
+
+
+#mainform span {
+  font-size: 25px;
+  color: yellow;
+  margin-bottom: 5px;
+}
+
+#mainform input {
+  width: 300px;
+  height: 35px;
+  padding-left: 25px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+#mainform button {
+  height: 40px;
+  width: 130px;
+  border-radius: 20px;
+  background-color: black;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+#mainform button:hover {
+  background-color: #005ea6;
+  transform: scale(1.2);
+  transition: 0.4s;
+}
