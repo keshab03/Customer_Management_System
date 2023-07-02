@@ -5,7 +5,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import customerService from '../services/customerservice'
 
 const Edit = () => {
-  const [data, setdata] = useState()
+  const [data, setdata] = useState("")
   let [name, setName] = useState("")
   let [address, setAddress] = useState("")
   let [due, setDue] = useState("")
@@ -21,7 +21,7 @@ const Edit = () => {
       await customerService.getcustomersById(id)
         .then((response) => {
           console.log(response)
-          setdata(response.customer)              
+          setdata(response.customer)
           setAddress(response.customer.address)
           setName(response.customer.name)
           setDue(response.customer.due)
@@ -55,43 +55,28 @@ const Edit = () => {
     let payLoad = { name, address, due, extra }
     customerService.updatecustomer(payLoad, id)
       .then(() => {
-        navigate("/")
+        navigate("/customerlist")
       })
 
   }
 
   return (
     <div>
-      <section id='mainform'>
-
-        <form id='edit'>
-          {data &&
-            <table >
-              <caption>Update Details</caption>
-              <tr>
-                <td><label htmlFor="">Name:</label></td>
-                <td><input type="text" placeholder='Enter Name' value={name} onChange={nameData} /></td>
-              </tr>
-              <tr>
-                <td><label htmlFor="">Address:</label></td>
-                <td><input type="text" placeholder='Enter Address' value={address} onChange={addressData} /></td>
-              </tr>
-              <tr>
-                <td><label htmlFor="">Due:</label></td>
-                <td><input type="number" placeholder='Enter due' value={due} onChange={dueData} /></td>
-              </tr>
-
-              <tr>
-                <td><label htmlFor="">Deposit:</label></td>
-                <td><input type="number" placeholder='Enter extra' value={extra} onChange={extraData} /></td>
-              </tr>
-  
-              <tr>
-                <th colSpan="2"><button onClick={formHandle}>Update</button></th>
-              </tr>
-            </table>
-          }
-        </form>
+      <section id='editform'>
+        {data &&
+          <form id='edit'>
+            <h3>Update Details</h3>
+            <span htmlFor="">Name:</span>
+            <input type="text" placeholder='Enter Name' value={name} onChange={nameData} />
+            <span htmlFor="">Address:</span>
+            <input type="text" placeholder='Enter Address' value={address} onChange={addressData} />
+            <span htmlFor="">Due:</span>
+            <input type="number" placeholder='Enter Amount' value={due} onChange={dueData} />
+            <span htmlFor="">Deposit:</span>
+            <input type="number" placeholder='Enter Amount' value={extra} onChange={extraData} />
+            <button onClick={formHandle}>Update</button>
+          </form>
+        }
       </section>
     </div>
   )
