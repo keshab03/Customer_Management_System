@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import "./edit.css"
 import { useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import backicon from "./back-icon.png"
 import customerService from '../services/customerservice'
 
 const Edit = () => {
@@ -65,6 +67,9 @@ const Edit = () => {
       <section id='editform'>
         {data &&
           <form id='edit'>
+            <Link to="/customerlist" style={{color:'white'}}>
+              <img src={backicon} alt="" style={{ paddingRight: '345px' }} />
+            </Link>
             <h3>Update Details</h3>
             <span htmlFor="">Name:</span>
             <input type="text" placeholder='Enter Name' value={name} onChange={nameData} />

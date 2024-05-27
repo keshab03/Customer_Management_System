@@ -7,18 +7,25 @@
 #nav{
     height: 98px;
     background-color: rgb(0, 0, 0);
-    box-shadow: 5px 5px 20px rgb(235, 4, 4);
+    /* box-shadow: 5px 5px 20px rgb(235, 4, 4); */
     /* border-bottom: 3px solid yellow; */
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#logo img{
-    width: 100px;
-    height: 80px;
+#nav img{
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+     box-shadow:5px 5px 20px white ;
+     transition: .5s;
 }
-#menu a{
+#nav img:hover{
+transform: rotate(360deg);
+}
+/* #menu a{
 text-decoration: none;
 font-size: 25px;
 color: white;
@@ -39,4 +46,4 @@ text-shadow: 10px 10px 10px rgb(255, 255, 255);
     margin-left: 55px;
 }
 
-
+ */
