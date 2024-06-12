@@ -81,3 +81,18 @@ margin: 5px;
 background-color: #3e8e41;
 
 }
+
+#generate-total-pdf button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 1px;
+  border-radius: 5px;
+  }
+  #generate-total-pdf button:hover {
+  background-color: #3e8e41;
+  border-radius: 25px;
+  text-decoration: underline;
+  }
